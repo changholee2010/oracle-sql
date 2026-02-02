@@ -1,13 +1,15 @@
--- Oracle(DBMS) - version(21C) - xe(database¸í)
--- user(scott) - Å×ÀÌºí.
+-- Oracle(DBMS) - version(21C) - xe(databaseëª…)
+-- user(scott) - í…Œì´ë¸”.
 -- Structured Query Language (SQL)
-SELECT studno, name -- ÄÃ·³¸í(ÀüÃ¼)
-FROM STUDENT; -- Å×ÀÌºí.
+SELECT studno, name -- ì»¬ëŸ¼ëª…(ì „ì²´)
+FROM STUDENT; -- í…Œì´ë¸”.
 
--- 1) professor Å×ÀÌºí. ÀüÃ¼ ÄÃ·³ Á¶È¸.
+-- 1) professor í…Œì´ë¸”. ì „ì²´ ì»¬ëŸ¼ ì¡°íšŒ.
 SELECT *
 FROM professor;
 
--- 2) ÇĞ»ı -> ÇĞ»ı¹øÈ£, ÀÌ¸§, ÇĞ³â
+-- 2) í•™ìƒ -> í•™ìƒë²ˆí˜¸, ì´ë¦„, í•™ë…„
 SELECT studno, name, grade
 FROM student;
+
+-- ìˆ™ì œì™„ë£Œí•¨.
