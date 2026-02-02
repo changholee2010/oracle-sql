@@ -9,4 +9,5 @@ router.get("/all_student", auth, adminOnly, async (req, res) => {
   const result = await conn.execute(`SELECT * FROM student`);
   res.json(result.rows);
 });
+
 module.exports = router;
