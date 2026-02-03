@@ -6,6 +6,6 @@ module.exports = async function getConnection() {
   return await oracledb.getConnection({
     user: "scott",
     password: "tiger",
-    connectString: "localhost:1521/XE",
+    connectString: "192.168.0.9:1521/XE",
   });
 };
