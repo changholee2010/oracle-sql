@@ -10,26 +10,20 @@ FROM dept;
 select * from board;
 -- 4/ 글등록연습/ user01/ sql연습중
 -- insert 완성.
-insert into board (board_no, title, content, writer) 
+insert into board (board_no, title, content, writer)
 values ((select max(board_no)+1 from board) 
         ,:title
         ,:content
         ,:writer
         );
-insert into board
-values(9, 'title', 'user02', 'content', sysdate, 0);
-
-select * from board;
-select max(board_no)+1 from board;
-
+-- 수정.
 update board
 set    click_cnt = click_cnt + 1
       ,title = :title
       ,content = :content
 where board_no = :bno;
-
-delete from board
-where content like '%바인드%';
+-- 삭제.
+delete from board where board_no = :bno;
 
 select * from board;
 
